@@ -67,7 +67,7 @@ export default function Produto(props){
             <div id='botao-comprar'>
                 <button 
                 onClick={()=>{
-                    AdicionarCompra(props.produto.id,quantidade,props.setLista,props.lista);
+                    AdicionarCompra(props.produto.id,quantidade,props.produto.image,props.produto.price,props.setLista,props.lista);
                 }}
                 
                     style={{

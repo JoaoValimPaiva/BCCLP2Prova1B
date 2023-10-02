@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Carrinho(props) {
     return (
         <div style={{
@@ -18,7 +20,7 @@ export default function Carrinho(props) {
                 padding: '2px',
                 width: '40px'
             }} id='icone-carrinho'>
-                <button id='botao-carrinho'style={{
+                <button id='botao-carrinho' as={Link} to="/carrinho" style={{
                     backgroundColor: "inherit",
                     border: '0px',
                 }
