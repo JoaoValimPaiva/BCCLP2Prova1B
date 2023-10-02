@@ -1,4 +1,5 @@
 import { useState } from "react";
+import AdicionarCompra from "../dados/listaCompras";
 export default function Produto(props){
     const [quantidade, setQuantidade] = useState(1);
     return(
@@ -73,7 +74,9 @@ export default function Produto(props){
                         height: '40px',
                         width: '120px',
                     }}
-                    type='button'>
+                    type='button' onClick={()=>{
+                        <AdicionarCompra id={props.produto.id} qtd={quantidade}/>
+                    }}>
                         Comprar
                 </button>
             </div>
