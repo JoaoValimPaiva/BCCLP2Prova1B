@@ -1,6 +1,4 @@
 export default function Carrinho(props) {
-    
-
     return (
         <div style={{
             display: 'flex',
@@ -51,7 +49,7 @@ export default function Carrinho(props) {
                 <p style={{
                     margin: '0px',
                     padding: '0px',
-                }}>{props.qtdCarrinho || 0} item</p>
+                }}>{props.lista.length} item</p>
             </div>
             <div id='segurança' style={{
                 display: 'flex',

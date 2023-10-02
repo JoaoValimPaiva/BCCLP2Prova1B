@@ -66,6 +66,10 @@ export default function Produto(props){
             </div>
             <div id='botao-comprar'>
                 <button 
+                onClick={()=>{
+                    AdicionarCompra(props.produto.id,quantidade,props.setLista,props.lista);
+                }}
+                
                     style={{
                         backgroundColor: 'rgb(255,60,60)',
                         color: 'white',
@@ -74,9 +78,7 @@ export default function Produto(props){
                         height: '40px',
                         width: '120px',
                     }}
-                    type='button' onClick={()=>{
-                        <AdicionarCompra id={props.produto.id} qtd={quantidade}/>
-                    }}>
+                    type='button'>
                         Comprar
                 </button>
             </div>
