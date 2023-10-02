@@ -12,6 +12,5 @@ export default function AdicionarCompra(id,qtd,img,preco,setLista,listaa){
         lista[i].qtd+=qtd;
     }
     setLista(lista);
-    console.log(listaa);
     localStorage.setItem("carrinho",JSON.stringify(lista));
 }
